@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4d9a6" />
+      <stop offset="100%" stop-color="#c59b52" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)" />
+  <rect y="520" width="1200" height="280" fill="#8b6a2b" />
+  <polygon points="220,520 420,280 620,520" fill="#d8b47a" />
+  <polygon points="520,520 720,300 920,520" fill="#c59b52" />
+  <circle cx="980" cy="160" r="70" fill="#f7e5c4" />
+  <text x="80" y="130" font-family="Verdana" font-size="54" fill="#3a2f24">EGITO</text>
+  <text x="80" y="190" font-family="Verdana" font-size="24" fill="#3a2f24">Volta ao Mundo</text>
+</svg>

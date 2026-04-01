@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <rect width="1000" height="700" fill="#f3e3c6" />
+  <rect y="420" width="1000" height="280" fill="#b78a4a" />
+  <polygon points="140,420 320,180 500,420" fill="#d8b47a" />
+  <polygon points="420,420 600,210 780,420" fill="#c59b52" />
+  <text x="60" y="90" font-family="Verdana" font-size="40" fill="#3a2f24">Piramides de Gize</text>
+</svg>

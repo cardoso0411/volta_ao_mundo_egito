@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <rect width="1000" height="700" fill="#f2e6d3" />
+  <rect x="120" y="160" width="760" height="380" fill="#c59b52" />
+  <g stroke="#3a2f24" stroke-width="4">
+    <line x1="160" y1="220" x2="840" y2="220" />
+    <line x1="160" y1="300" x2="840" y2="300" />
+    <line x1="160" y1="380" x2="840" y2="380" />
+  </g>
+  <text x="60" y="90" font-family="Verdana" font-size="40" fill="#3a2f24">Hieroglifos</text>
+</svg>

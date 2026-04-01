@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <rect width="1000" height="700" fill="#f4d8a0" />
+  <path d="M0 520 C 140 460, 300 560, 480 520 C 660 480, 820 580, 1000 520 L1000 700 L0 700 Z" fill="#c59b52" />
+  <circle cx="820" cy="160" r="70" fill="#fbe9c7" />
+  <text x="60" y="90" font-family="Verdana" font-size="40" fill="#3a2f24">Deserto</text>
+</svg>

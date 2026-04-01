@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <rect width="1000" height="700" fill="#e6f2ee" />
+  <rect y="420" width="1000" height="280" fill="#c8b08b" />
+  <rect y="380" width="1000" height="80" fill="#3f7d6b" />
+  <polygon points="280,420 380,320 480,420" fill="#f4f0e8" />
+  <rect x="300" y="360" width="160" height="50" fill="#b18443" />
+  <text x="60" y="90" font-family="Verdana" font-size="40" fill="#2b2418">Barco no Nilo</text>
+</svg>

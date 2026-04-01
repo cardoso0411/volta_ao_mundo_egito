@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <rect width="1000" height="700" fill="#e7f1e2" />
+  <rect y="480" width="1000" height="220" fill="#c6b089" />
+  <path d="M0 470 C 200 430, 360 520, 560 480 C 740 450, 860 520, 1000 480 L1000 520 L0 520 Z" fill="#3f7d6b" />
+  <text x="60" y="90" font-family="Verdana" font-size="40" fill="#2b2418">Rio Nilo</text>
+</svg>

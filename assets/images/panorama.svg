@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <rect width="1000" height="700" fill="#f4dec0" />
+  <rect y="450" width="1000" height="250" fill="#b78a4a" />
+  <polygon points="220,450 420,240 620,450" fill="#d8b47a" />
+  <polygon points="500,450 700,270 900,450" fill="#c59b52" />
+  <text x="60" y="90" font-family="Verdana" font-size="40" fill="#3a2f24">Panorama</text>
+</svg>
