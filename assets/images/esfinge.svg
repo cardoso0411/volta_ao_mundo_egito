@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
-  <rect width="1000" height="700" fill="#f6e9d1" />
-  <rect y="460" width="1000" height="240" fill="#b18443" />
-  <rect x="240" y="300" width="520" height="180" rx="40" fill="#c59b52" />
-  <circle cx="360" cy="330" r="50" fill="#d2ae6a" />
-  <rect x="500" y="360" width="200" height="90" rx="30" fill="#d2ae6a" />
-  <text x="60" y="90" font-family="Verdana" font-size="40" fill="#3a2f24">Esfinge</text>
-</svg>
