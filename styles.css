@@ -1,4 +1,5 @@
 /* Tema visual complementar ao Bootstrap */
+/* Variaveis de cor para manter o tema egipcio padronizado */
 :root {
   --sand: #f5dced86;
   --sand-strong: #da9012;
@@ -7,22 +8,26 @@
   --dark: #1f1711;
 }
 
+/* Faz a rolagem ficar suave ao clicar nos links do menu */
 html {
   scroll-behavior: smooth;
 }
 
+/* Estilo geral do corpo da pagina */
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--sand);
   color: var(--brown);
 }
 
+/* Titulos com fonte diferente para criar destaque visual */
 h1,
 h2,
 h3 {
   font-family: "Playfair Display", serif;
 }
 
+/* Aparencia do cabecalho fixo */
 .site-header {
   background: rgba(245, 220, 220, 0.96);
   backdrop-filter: blur(8px);
@@ -39,6 +44,7 @@ h3 {
   letter-spacing: 0.18rem;
 }
 
+/* Estilo padrao dos links do menu */
 .site-header .nav-link {
   color: var(--brown);
   font-weight: 600;
@@ -52,6 +58,7 @@ h3 {
   color: var(--brown);
 }
 
+/* Container do menu hamburguer para celular */
 .mobile-menu {
   position: relative;
 }
@@ -64,6 +71,7 @@ h3 {
   display: none;
 }
 
+/* Botao hamburguer desenhado com tres linhas */
 .mobile-menu-button {
   width: 52px;
   height: 52px;
@@ -86,6 +94,7 @@ h3 {
   display: block;
 }
 
+/* Painel suspenso que aparece quando o menu e aberto */
 .mobile-menu-panel {
   position: absolute;
   top: calc(100% + 0.75rem);
@@ -105,11 +114,13 @@ h3 {
   text-align: center;
 }
 
+/* Botao de contato destacado no menu */
 .nav-link-contact {
   background-color: var(--gold);
   color: #ffffff !important;
 }
 
+/* Fundo especial da secao principal */
 .hero-section {
   background: linear-gradient(135deg, #f8f1e3 0%, #ead7b0 100%);
 }
@@ -126,6 +137,7 @@ h3 {
   border-radius: 1rem;
 }
 
+/* Padroniza como as imagens devem preencher seus espacos */
 .hero-image,
 .tourism-image,
 .gallery-image {
@@ -145,6 +157,7 @@ h3 {
   width: 100%;
 }
 
+/* Pequenos cards de numeros da primeira secao */
 .info-box {
   background-color: rgba(255, 255, 255, 0.85);
   border: 1px solid rgba(77, 54, 35, 0.08);
@@ -164,6 +177,7 @@ h3 {
   background: linear-gradient(180deg, #f5ecdc 0%, #efe0c1 100%);
 }
 
+/* Efeito simples para destacar cards e imagens ao passar o mouse */
 .custom-card,
 .curiosity-card,
 .contact-card,
@@ -179,6 +193,7 @@ h3 {
   transform: translateY(-4px);
 }
 
+/* Aparencia dos campos do formulario */
 .contact-card .form-control {
   border-radius: 0.75rem;
   border-color: #d7c4a3;
@@ -189,6 +204,7 @@ h3 {
   box-shadow: 0 0 0 0.25rem rgba(212, 166, 60, 0.2);
 }
 
+/* Estilo do rodape */
 .footer-section {
   background-color: #120d09;
   color: #f3dfbf;
@@ -205,6 +221,7 @@ h3 {
   color: #f6d37a;
 }
 
+/* Ajustes especificos para telas pequenas */
 @media (max-width: 767.98px) {
   .hero-image {
     height: 260px;
