@@ -3,353 +3,435 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Egito: Civilização Milenar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Volta ao Mundo - Egito</title>
+    <meta
+      name="description"
+      content="Projeto educacional sobre o Egito com historia, cultura, turismo e curiosidades."/>
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"/>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="header" id="topo">
-      <div class="container header__content">
-        <div class="brand">
-          <span class="brand__icon">𓂀</span>
+    <header class="site-header sticky-top border-bottom">
+      <nav class="container py-3">
+        <div class="d-flex align-items-center justify-content-between gap-3">
           <div>
-            <h1 class="brand__title">Egito</h1>
+            <p class="text-uppercase small fw-semibold mb-1 site-label">Volta ao Mundo</p>
+            <h1 class="h3 mb-0 site-title">Egito</h1>
+          </div>
+
+          <details class="mobile-menu d-lg-none">
+            <summary class="mobile-menu-button" aria-label="Abrir menu de navegacao">
+              <span></span>
+              <span></span>
+              <span></span>
+            </summary>
+            <div class="mobile-menu-panel">
+              <a class="nav-link" href="#home">Inicio</a>
+              <a class="nav-link" href="#historia">Historia</a>
+              <a class="nav-link" href="#turismo">Turismo</a>
+              <a class="nav-link" href="#cultura">Cultura</a>
+              <a class="nav-link" href="#galeria">Galeria</a>
+              <a class="nav-link" href="#curiosidades">Curiosidades</a>
+              <a class="nav-link nav-link-contact" href="#contato">Contato</a>
+            </div>
+          </details>
+
+          <div class="nav nav-pills gap-2 text-center d-none d-lg-flex">
+            <a class="nav-link" href="#home">Inicio</a>
+            <a class="nav-link" href="#historia">Historia</a>
+            <a class="nav-link" href="#turismo">Turismo</a>
+            <a class="nav-link" href="#cultura">Cultura</a>
+            <a class="nav-link" href="#galeria">Galeria</a>
+            <a class="nav-link" href="#curiosidades">Curiosidades</a>
+            <a class="nav-link nav-link-contact" href="#contato">Contato</a>
           </div>
         </div>
-        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <nav class="nav" aria-label="Navegação principal">
-          <a href="#home" class="nav__link">Início</a>
-          <a href="#historia" class="nav__link">História</a>
-          <a href="#turismo" class="nav__link">Turismo</a>
-          <a href="#cultura" class="nav__link">Cultura</a>
-          <a href="#galeria" class="nav__link">Galeria</a>
-          <a href="#curiosidades" class="nav__link">Curiosidades</a>
-          <a href="#contato" class="nav__link nav__link--cta">Contato</a>
-        </nav>
-      </div>
+      </nav>
     </header>
 
     <main>
-      <section class="hero" id="home">
-        <div class="container hero__content">
-          <div class="hero__text">
-            <h2>Egito: Civilização Milenar</h2>
-            <p>
-                Um mergulho na rica história do Egito, explorando pirâmides, deuses, o Rio Nilo e a cultura que atravessa milênios. Conteúdo visual e informativo para conhecer os principais fatos e curiosidades desse país fascinante.
-            </p>
-            <div class="hero__actions">
-              <a class="btn btn--primary" target="_blank" href="https://br.memphistours.com/egito/sobre-egito">Saiba mais</a>
-              <a class="btn btn--ghost" href="#contato">Fale com a equipe</a>
+      <section class="hero-section py-5" id="home">
+        <div class="container py-lg-5">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+              <span class="badge rounded-pill hero-badge mb-3">Projeto educacional</span>
+              <h2 class="display-5 fw-bold hero-title">Volta ao Mundo - Egito</h2>
+              <p class="lead text-secondary mt-3">
+                Um site sobre a civilizacao egipcia, destacando sua historia,
+                cultura, religiao, culinaria e os principais pontos turisticos.
+                O objetivo e apresentar o Egito de forma clara, bonita e
+                organizada para um trabalho academico.
+              </p>
+              <div class="d-flex flex-wrap gap-3 mt-4">
+                <a class="btn btn-warning px-4 py-2 fw-semibold" href="#historia">Saiba mais</a>
+                <a class="btn btn-outline-dark px-4 py-2 fw-semibold" href="#contato">Entrar em contato</a>
+              </div>
+              <div class="row g-3 mt-4">
+                <div class="col-sm-4">
+                  <article class="info-box text-center h-100">
+                    <h3 class="h4 fw-bold mb-1">3.000+</h3>
+                    <p class="mb-0 small">Anos de historia</p>
+                  </article>
+                </div>
+                <div class="col-sm-4">
+                  <article class="info-box text-center h-100">
+                    <h3 class="h4 fw-bold mb-1">7</h3>
+                    <p class="mb-0 small">Grandes monumentos</p>
+                  </article>
+                </div>
+                <div class="col-sm-4">
+                  <article class="info-box text-center h-100">
+                    <h3 class="h4 fw-bold mb-1">1</h3>
+                    <p class="mb-0 small">Rio essencial: Nilo</p>
+                  </article>
+                </div>
+              </div>
             </div>
-            <div class="hero__stats">
-              <div class="stat">
-                <span class="stat__value">3.000+</span>
-                <span class="stat__label">Anos de história</span>
-              </div>
-              <div class="stat">
-                <span class="stat__value">100+</span>
-                <span class="stat__label">Museus e sítios</span>
-              </div>
-              <div class="stat">
-                <span class="stat__value">2.000 km</span>
-                <span class="stat__label">Rio Nilo</span>
+            <div class="col-lg-6">
+              <div class="card hero-card shadow-lg border-0">
+                <img
+                  src="assets/images/hero-egito.jpg"
+                  class="card-img-top hero-image"
+                  alt="Pirâmides do Egito ao entardecer"
+                />
+                <div class="card-body p-4">
+                  <p class="text-uppercase small fw-semibold section-mark mb-2">Destaque</p>
+                  <h3 class="h4">Civilizacao que marcou a historia</h3>
+                  <p class="mb-0 text-secondary">
+                    O Egito Antigo foi uma das civilizacoes mais importantes da
+                    Antiguidade, conhecido por seus faraos, templos, piramides e
+                    avancos em escrita, medicina e engenharia.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="hero__visual">
-            <div class="hero__card">
-              <p class="hero__card-title">Destaque</p>
-              <h3>Patrimônio da Humanidade</h3>
-              <p>
-                O Egito concentra alguns dos sítios arqueológicos mais preservados do mundo,
-                reconhecidos pela UNESCO.
-              </p>
+        </div>
+      </section>
+
+      <section class="py-5 section-light" id="historia">
+        <div class="container py-4">
+          <div class="text-center mb-5">
+            <p class="text-uppercase small fw-semibold section-mark mb-2">Historia</p>
+            <h2 class="display-6 fw-bold">A trajetoria do Egito Antigo</h2>
+            <p class="col-lg-8 mx-auto text-secondary mb-0">
+              O Egito se desenvolveu nas margens do Rio Nilo, formando uma
+              sociedade organizada, religiosa e poderosa. Seus periodos
+              historicos revelam evolucao politica, arquitetonica e cultural.
+            </p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <article class="card h-100 border-0 shadow-sm custom-card">
+                <div class="card-body p-4">
+                  <h3 class="h5">Periodo Pre-Dinastico</h3>
+                  <p class="mb-0 text-secondary">
+                    Surgimento das primeiras comunidades agricolas e das bases
+                    da organizacao social egipcia.
+                  </p>
+                </div>
+              </article>
             </div>
-            <div
-              href="/assets/images/hero-egito.jpg" rel="noopener noreferrer">
-              <img
-                src="assets/images/hero-egito.jpg"
-                alt="Vista panorâmica das pirâmides de Gizé ao entardecer"
-                class="hero__image"
-              />
+            <div class="col-md-4">
+              <article class="card h-100 border-0 shadow-sm custom-card">
+                <div class="card-body p-4">
+                  <h3 class="h5">Antigo Imperio</h3>
+                  <p class="mb-0 text-secondary">
+                    Fase marcada pelo fortalecimento dos faraos e pela
+                    construcao das famosas piramides de Gize.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="card h-100 border-0 shadow-sm custom-card">
+                <div class="card-body p-4">
+                  <h3 class="h5">Medio e Novo Imperio</h3>
+                  <p class="mb-0 text-secondary">
+                    Periodo de expansao militar, riqueza comercial e destaque
+                    para faraos como Ramses II e Tutancamon.
+                  </p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="historia">
-        <div class="container">
-          <header class="section__header">
-            <p class="section__eyebrow">Linha do tempo</p>
-            <h2>História do Egito Antigo</h2>
-            <p>
-              O Egito floresceu ao longo do Rio Nilo, criando uma das civilizações mais
-              influentes da Antiguidade. Sua organização social, religião e ciência ainda
-              inspiram pesquisas no mundo todo.
+      <section class="py-5 section-dark" id="turismo">
+        <div class="container py-4">
+          <div class="text-center mb-5">
+            <p class="text-uppercase small fw-semibold section-mark-light mb-2">Turismo</p>
+            <h2 class="display-6 fw-bold text-white">Pontos turisticos mais famosos</h2>
+            <p class="col-lg-8 mx-auto text-light-emphasis mb-0">
+              O Egito e um destino historico e cultural. Seus monumentos atraem
+              visitantes do mundo todo e ajudam a entender a grandeza dessa
+              civilizacao.
             </p>
-          </header>
-          <div class="grid grid--three">
-            <article class="card">
-              <h3>Período Pré-Dinástico</h3>
-              <p>
-                Formação das primeiras comunidades agrícolas e desenvolvimento de técnicas
-                de irrigação.
-              </p>
-            </article>
-            <article class="card">
-              <h3>Antigo Império</h3>
-              <p>
-                Centralização do poder e construção das grandes pirâmides, como as de Gizé.
-              </p>
-            </article>
-            <article class="card">
-              <h3>Médio e Novo Império</h3>
-              <p>
-                Expansão territorial, riquezas comerciais e faraós famosos como
-                Hatshepsut e Ramsés II.
-              </p>
-            </article>
           </div>
-        </div>
-      </section>
-
-      <section class="section section--dark" id="turismo">
-        <div class="container">
-          <header class="section__header">
-            <p class="section__eyebrow">Pontos turísticos</p>
-            <h2>Destinos imperdíveis</h2>
-            <p>
-              Do deserto às margens do Nilo, o Egito combina monumentos milenares e paisagens
-              surpreendentes.
-            </p>
-          </header>
-          <div class="grid grid--three">
-            <article class="card card--photo">
-              <img src="assets/images/gize.jpg" alt="Pirâmides de Gizé ao pôr do sol" />
-              <div class="card__content">
-                <h3>Pirâmides de Gizé</h3>
-                <p>Uma das Sete Maravilhas do Mundo Antigo.</p>
-              </div>
-            </article>
-            <article class="card card--photo">
-              <img src="assets/images/esfinge.jpg" alt="Grande Esfinge de Gizé" />
-              <div class="card__content">
-                <h3>Esfinge</h3>
-                <p>Guardião simbólico das pirâmides e mistérios egípcios.</p>
-              </div>
-            </article>
-            <article class="card card--photo">
-              <img src="assets/images/nilo.jpg" alt="Rio Nilo em paisagem verde" />
-              <div class="card__content">
-                <h3>Rio Nilo</h3>
-                <p>Fonte de vida, agricultura e cultura há milênios.</p>
-              </div>
-            </article>
-            <article class="card card--photo">
-              <img src="assets/images/valley.jpg" alt="Vale dos Reis com túmulos antigos" />
-              <div class="card__content">
-                <h3>Vale dos Reis</h3>
-                <p>Local de descanso final de faraós e nobres.</p>
-              </div>
-            </article>
-            <article class="card card--photo">
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="cultura">
-        <div class="container">
-          <header class="section__header">
-            <p class="section__eyebrow">Cultura</p>
-            <h2>Religião, costumes e culinária</h2>
-            <p>
-              A cultura egípcia mistura tradição e modernidade, mantendo festivais,
-              rituais e sabores característicos.
-            </p>
-          </header>
-          <div class="grid grid--two">
-            <article class="card">
-              <h3>Religião e mitologia</h3>
-              <p>
-                Deuses como Ísis, Osíris e Rá eram centrais na vida cotidiana, refletidos
-                em templos e cerimônias.
-              </p>
-            </article>
-            <article class="card">
-              <h3>Costumes</h3>
-              <p>
-                A família é um valor forte e o artesanato, como papiros e joias, preserva
-                técnicas antigas.
-              </p>
-            </article>
-            <article class="card">
-              <h3>Culinária</h3>
-              <p>
-                Pratos tradicionais incluem koshari, falafel e pães artesanais, com especiarias
-                marcantes.
-              </p>
-            </article>
-            <article class="card">
-              <h3>Arte e escrita</h3>
-              <p>
-                Os hieróglifos e relevos em pedra contam histórias de faraós e conquistas.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--pattern" id="galeria">
-        <div class="container">
-          <header class="section__header">
-            <p class="section__eyebrow">Galeria</p>
-            <h2>Imagens que inspiram</h2>
-            <p>
-              Uma seleção visual para contextualizar arquitetura, paisagens e símbolos.
-            </p>
-          </header>
-          <div class="gallery">
-            <img src="assets/images/templo.jpg" alt="Templo egípcio com colunas" />
-            <img src="assets/images/deserto.jpg" alt="Deserto do Saara" />
-            <img src="assets/images/barco.jpg" alt="Barco navegando no Rio Nilo" />
-            <img src="assets/images/hieroglifos.jpg" alt="Detalhes de hieróglifos" />
-            <img src="assets/images/panorama.jpg" alt="Panorama das pirâmides" />
-            <img src="assets/images/cairo.jpg" alt="Cidade do Cairo ao entardecer" />
-            <img src="assets/images/arte.jpg" alt="Artefatos egípcios em museu" />
-            <img src="assets/images/mask.jpg" alt="Máscara de ouro do faraó" />
-            <img src="assets/images/templo-2.jpg" alt="Ruínas de um templo antigo" />
-            <img src="assets/images/mercado.jpg" alt="Mercado tradicional egípcio" />
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="curiosidades">
-        <div class="container">
-          <header class="section__header">
-            <p class="section__eyebrow">Curiosidades</p>
-            <h2>Fatos rápidos sobre o Egito</h2>
-            <p>
-              Pequenos detalhes que ajudam a entender por que o Egito é tão fascinante.
-            </p>
-          </header>
-          <div class="grid grid--three">
-            <article class="card">
-              <h3>Calendário solar</h3>
-              <p>
-                Os egípcios criaram um calendário baseado no ciclo do Sol e na cheia do Nilo.
-              </p>
-            </article>
-            <article class="card">
-              <h3>Medicina avançada</h3>
-              <p>
-                Existiam especializações médicas e registros sobre tratamentos cirúrgicos.
-              </p>
-            </article>
-            <article class="card">
-              <h3>Mumificação</h3>
-              <p>
-                Era um ritual religioso para preservar o corpo e a identidade no além.
-              </p>
-            </article>
-            <article class="card">
-              <h3>Escrita hieroglífica</h3>
-              <p>
-                Um sistema complexo de símbolos que combinava fonogramas e ideogramas.
-              </p>
-            </article>
-            <article class="card">
-              <h3>Construção das pirâmides</h3>
-              <p>
-                Acredita-se que milhares de trabalhadores qualificados participaram da construção
-                das pirâmides, usando técnicas avançadas de engenharia.
-              </p>
-            </article>
-            <article class="card">
-              <h3>Deuses e mitos</h3>
-              <p>
-                A mitologia egípcia é rica em histórias de deuses, heróis e oalém, influenciando a arte e a cultura por milênios.
-              </p>
-            </article>
-            <article class="card">
-              <h3>Relação com o deserto</h3>
-              <p>
-                O deserto era visto como um lugar de mistério e perigo, mas também de proteção contra invasores.
-              </p>
-            </article>
-            <article class="card">
-              <h3>Importância do Nilo</h3>
-              <p>
-                O Nilo era a fonte de vida, fornecendo água, transporte e fertilidade para a agricultura, sendo central para a sobrevivência e prosperidade do Egito.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--dark" id="contato">
-        <div class="container">
-          <header class="section__header">
-            <p class="section__eyebrow">Contato</p>
-            <h2>Vamos conversar?</h2>
-            <p>
-              Formulário simples para feedbacks ou parcerias acadêmicas.
-            </p>
-          </header>
-          <form class="form" aria-label="Formulário de contato">
-            <div class="form__field">
-              <label for="nome">Nome</label>
-              <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+          <div class="row g-4">
+            <div class="col-md-6 col-xl-3">
+              <article class="card h-100 border-0 overflow-hidden shadow custom-card">
+                <img src="assets/images/gize.jpg" class="tourism-image" alt="Piramides de Gize" />
+                <div class="card-body p-4">
+                  <h3 class="h5">Piramides de Gize</h3>
+                  <p class="mb-0 text-secondary">
+                    Um dos maiores simbolos do Egito e uma das Sete Maravilhas
+                    do Mundo Antigo.
+                  </p>
+                </div>
+              </article>
             </div>
-            <div class="form__field">
-              <label for="email">E-mail</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="seuemail@exemplo.com"
-                required
-              />
+            <div class="col-md-6 col-xl-3">
+              <article class="card h-100 border-0 overflow-hidden shadow custom-card">
+                <img src="assets/images/esfinge.jpg" class="tourism-image" alt="Esfinge de Gize" />
+                <div class="card-body p-4">
+                  <h3 class="h5">Esfinge</h3>
+                  <p class="mb-0 text-secondary">
+                    Monumento com corpo de leao e cabeca humana, cercado por
+                    misterios e simbolismo.
+                  </p>
+                </div>
+              </article>
             </div>
-            <div class="form__field">
-              <label for="mensagem">Mensagem</label>
-              <textarea
-                id="mensagem"
-                name="mensagem"
-                rows="4"
-                placeholder="Como podemos ajudar?"
-                required
-              ></textarea>
+            <div class="col-md-6 col-xl-3">
+              <article class="card h-100 border-0 overflow-hidden shadow custom-card">
+                <img src="assets/images/nilo.jpg" class="tourism-image" alt="Rio Nilo" />
+                <div class="card-body p-4">
+                  <h3 class="h5">Rio Nilo</h3>
+                  <p class="mb-0 text-secondary">
+                    Fundamental para a agricultura, transporte e sobrevivencia do
+                    povo egipcio.
+                  </p>
+                </div>
+              </article>
             </div>
-            <button type="submit" class="btn btn--primary">Enviar mensagem</button>
-          </form>
+            <div class="col-md-6 col-xl-3">
+              <article class="card h-100 border-0 overflow-hidden shadow custom-card">
+                <img src="assets/images/valley.jpg" class="tourism-image" alt="Vale dos Reis" />
+                <div class="card-body p-4">
+                  <h3 class="h5">Vale dos Reis</h3>
+                  <p class="mb-0 text-secondary">
+                    Area famosa por abrigar tumbas de faraos importantes, como a
+                    de Tutancamon.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 section-light" id="cultura">
+        <div class="container py-4">
+          <div class="text-center mb-5">
+            <p class="text-uppercase small fw-semibold section-mark mb-2">Cultura</p>
+            <h2 class="display-6 fw-bold">Religiao, costumes e culinaria</h2>
+            <p class="col-lg-8 mx-auto text-secondary mb-0">
+              A cultura egipcia e marcada pela valorizacao da religiao, da
+              familia, da arte e dos alimentos tradicionais, unindo passado e
+              presente.
+            </p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <article class="card h-100 border-0 shadow-sm custom-card">
+                <div class="card-body p-4">
+                  <h3 class="h5">Religiao e mitologia</h3>
+                  <p class="mb-0 text-secondary">
+                    Os egipcios eram politeistas e acreditavam em deuses como
+                    Ra, Osiris, Isis e Anubis.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="card h-100 border-0 shadow-sm custom-card">
+                <div class="card-body p-4">
+                  <h3 class="h5">Costumes</h3>
+                  <p class="mb-0 text-secondary">
+                    O cotidiano valorizava a familia, o trabalho artesanal, a
+                    agricultura e os rituais religiosos.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="card h-100 border-0 shadow-sm custom-card">
+                <div class="card-body p-4">
+                  <h3 class="h5">Culinaria</h3>
+                  <p class="mb-0 text-secondary">
+                    Pratos como koshari, falafel, paes e doces com tâmaras fazem
+                    parte da gastronomia local.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="card h-100 border-0 shadow-sm custom-card">
+                <div class="card-body p-4">
+                  <h3 class="h5">Arte e escrita</h3>
+                  <p class="mb-0 text-secondary">
+                    Hieroglifos, esculturas e pinturas registravam fatos
+                    historicos, crenças e a vida dos faraos.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 gallery-section" id="galeria">
+        <div class="container py-4">
+          <div class="text-center mb-5">
+            <p class="text-uppercase small fw-semibold section-mark mb-2">Galeria</p>
+            <h2 class="display-6 fw-bold">Imagens sobre o Egito</h2>
+            <p class="col-lg-8 mx-auto text-secondary mb-0">
+              Esta galeria apresenta paisagens, monumentos e elementos culturais
+              para enriquecer a parte visual do trabalho.
+            </p>
+          </div>
+          <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-3">
+              <img class="img-fluid rounded shadow-sm gallery-image" src="assets/images/templo.jpg" alt="Templo egipcio com colunas" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img class="img-fluid rounded shadow-sm gallery-image" src="assets/images/deserto.jpg" alt="Paisagem do deserto no Egito" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img class="img-fluid rounded shadow-sm gallery-image" src="assets/images/barco.jpg" alt="Barco navegando no Rio Nilo" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img class="img-fluid rounded shadow-sm gallery-image" src="assets/images/hieroglifos.jpg" alt="Hieroglifos gravados em pedra" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img class="img-fluid rounded shadow-sm gallery-image" src="assets/images/panorama.jpg" alt="Panorama das piramides" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img class="img-fluid rounded shadow-sm gallery-image" src="assets/images/cairo.jpg" alt="Vista da cidade do Cairo" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img class="img-fluid rounded shadow-sm gallery-image" src="assets/images/museu.jpg" alt="Museu com artefatos egipcios" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img class="img-fluid rounded shadow-sm gallery-image" src="assets/images/mask.jpg" alt="Mascara de ouro do farao" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 section-light" id="curiosidades">
+        <div class="container py-4">
+          <div class="text-center mb-5">
+            <p class="text-uppercase small fw-semibold section-mark mb-2">Curiosidades</p>
+            <h2 class="display-6 fw-bold">Fatos curiosos sobre o Egito</h2>
+            <p class="col-lg-8 mx-auto text-secondary mb-0">
+              Informacoes curtas e interessantes para complementar a explicacao
+              durante a apresentacao.
+            </p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <article class="card h-100 border-0 shadow-sm curiosity-card">
+                <div class="card-body p-4">
+                  <h3 class="h6 fw-bold">Calendario solar</h3>
+                  <p class="mb-0 text-secondary">
+                    Os egipcios desenvolveram um calendario com base no Sol e na
+                    cheia do Nilo.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <article class="card h-100 border-0 shadow-sm curiosity-card">
+                <div class="card-body p-4">
+                  <h3 class="h6 fw-bold">Mumificacao</h3>
+                  <p class="mb-0 text-secondary">
+                    O processo tinha relacao com a crença na vida apos a morte.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <article class="card h-100 border-0 shadow-sm curiosity-card">
+                <div class="card-body p-4">
+                  <h3 class="h6 fw-bold">Medicina</h3>
+                  <p class="mb-0 text-secondary">
+                    Havia registros medicos com receitas, tratamentos e
+                    observacoes cirurgicas.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <article class="card h-100 border-0 shadow-sm curiosity-card">
+                <div class="card-body p-4">
+                  <h3 class="h6 fw-bold">Engenharia</h3>
+                  <p class="mb-0 text-secondary">
+                    As construcoes mostram dominio de calculo, organizacao e
+                    tecnicas avancadas para a epoca.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 section-dark" id="contato">
+        <div class="container py-4">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="text-center mb-5">
+                <p class="text-uppercase small fw-semibold section-mark-light mb-2">Contato</p>
+                <h2 class="display-6 fw-bold text-white">Envie sua mensagem</h2>
+              </div>
+              <form class="card border-0 shadow p-4 p-md-5 contact-card">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="nome" class="form-label fw-semibold">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label fw-semibold">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required />
+                  </div>
+                  <div class="col-12">
+                    <label for="mensagem" class="form-label fw-semibold">Mensagem</label>
+                    <textarea
+                      class="form-control"
+                      id="mensagem"
+                      rows="5"
+                      placeholder="Escreva sua mensagem"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-warning px-5 py-2 fw-semibold">Enviar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container footer__content">
-        <div>
-          <h3>Volta ao Mundo – Egito</h3>
-          <p>Projeto educacional para Desenvolvimento Web.</p>
-        </div>
-        <div class="footer__links">
-          <a href="#home">Voltar ao topo</a>
-          <a href="#galeria">Galeria</a>
-          <a href="#contato">Contato</a>
-        </div>
+    <footer class="py-4 footer-section">
+      <div class="container text-center">
+        <h2 class="h5 mb-2">Volta ao Mundo - Egito</h2>
+        <p class="mb-2">Projeto academico desenvolvido para a disciplina de Desenvolvimento Web III.</p>
+        <a href="#home" class="footer-link">Voltar ao topo</a>
       </div>
-      <p class="footer__copy">© 2026 - Todos os direitos reservados.</p>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
