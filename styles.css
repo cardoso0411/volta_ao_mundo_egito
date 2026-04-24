@@ -114,12 +114,6 @@ h3 {
   text-align: center;
 }
 
-/* Botao de contato destacado no menu */
-.nav-link-contact {
-  background-color: var(--gold);
-  color: #ffffff !important;
-}
-
 /* Fundo especial da secao principal */
 .hero-section {
   background: linear-gradient(135deg, #f8f1e3 0%, #ead7b0 100%);
@@ -191,12 +185,6 @@ h3 {
 .gallery-image:hover,
 .info-box:hover {
   transform: translateY(-4px);
-}
-
-/* Aparencia dos campos do formulario */
-.contact-card .form-control {
-  border-radius: 0.75rem;
-  border-color: #d7c4a3;
 }
 
 .contact-card .form-control:focus {
