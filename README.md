@@ -2,6 +2,12 @@
 
 Projeto desenvolvido para a disciplina de Desenvolvimento Web III. Este site apresenta um trabalho educativo sobre o Egito, com seções de história, turismo, cultura, galeria de imagens, curiosidades e um formulário de contato.
 
+<p align="center">
+  <a href="https://cardoso0411.github.io/volta_ao_mundo_egito/" target="_blank">
+    <img src="https://img.shields.io/badge/🌐%20Acessar%20Projeto-Online-blue?style=for-the-badge&logo=google-chrome">
+  </a>
+</p>
+
 ## Estrutura do projeto
 
 - `index.html`
