@@ -1,217 +1,152 @@
-/* Tema visual complementar ao Bootstrap */
-/* Variaveis de cor para manter o tema egipcio padronizado */
-:root {
-  --sand: #f5dced86;
-  --sand-strong: #da9012;
-  --gold: #d4a63c;
-  --brown: #4d3623;
-  --dark: #1f1711;
-}
-
-/* Faz a rolagem ficar suave ao clicar nos links do menu */
+/* Reset e configurações base */
 html {
   scroll-behavior: smooth;
 }
 
-/* Estilo geral do corpo da pagina */
 body {
-  font-family: "Montserrat", sans-serif;
-  background-color: var(--sand);
-  color: var(--brown);
+  font-family: 'Lato', sans-serif;
 }
 
-/* Titulos com fonte diferente para criar destaque visual */
-h1,
-h2,
-h3 {
-  font-family: "Playfair Display", serif;
+/* Títulos com fonte decorativa */
+.font-title {
+  font-family: 'Cinzel', serif;
 }
 
-/* Aparencia do cabecalho fixo */
-.site-header {
-  background: rgba(245, 220, 220, 0.96);
-  backdrop-filter: blur(8px);
+/* ===== ANIMAÇÕES ===== */
+
+/* Animação de fade-in ao entrar na viewport */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.site-title,
-.hero-title {
-  color: var(--brown);
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.site-label,
-.section-mark,
-.section-mark-light {
-  letter-spacing: 0.18rem;
+/* Animação de hover nos cards */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Estilo padrao dos links do menu */
-.site-header .nav-link {
-  color: var(--brown);
-  font-weight: 600;
-  border-radius: 999px;
-  padding: 0.5rem 1rem;
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-.site-header .nav-link:hover,
-.site-header .nav-link:focus {
-  background-color: var(--sand-strong);
-  color: var(--brown);
-}
-
-/* Container do menu hamburguer para celular */
-.mobile-menu {
+/* Efeito de brilho no hover */
+.shine-effect {
   position: relative;
+  overflow: hidden;
 }
 
-.mobile-menu summary {
-  list-style: none;
-}
-
-.mobile-menu summary::-webkit-details-marker {
-  display: none;
-}
-
-/* Botao hamburguer desenhado com tres linhas */
-.mobile-menu-button {
-  width: 52px;
-  height: 52px;
-  border: 1px solid rgba(77, 54, 35, 0.15);
-  border-radius: 0.9rem;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  cursor: pointer;
-  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.08);
-}
-
-.mobile-menu-button span {
-  width: 22px;
-  height: 2px;
-  background-color: var(--brown);
-  display: block;
-}
-
-/* Painel suspenso que aparece quando o menu e aberto */
-.mobile-menu-panel {
+.shine-effect::after {
+  content: '';
   position: absolute;
-  top: calc(100% + 0.75rem);
-  right: 0;
-  min-width: 220px;
-  padding: 0.75rem;
-  border-radius: 1rem;
-  background-color: rgba(255, 255, 255, 0.98);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12);
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  z-index: 20;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 100%
+  );
+  transform: rotate(45deg) translateX(-100%);
+  transition: transform 0.6s ease;
 }
 
-.mobile-menu-panel .nav-link {
-  text-align: center;
+.shine-effect:hover::after {
+  transform: rotate(45deg) translateX(100%);
 }
 
-/* Fundo especial da secao principal */
-.hero-section {
-  background: linear-gradient(135deg, #f8f1e3 0%, #ead7b0 100%);
+/* ===== PADRÃO EGÍPCIO DECORATIVO ===== */
+.egypt-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L60 30L30 60L0 30z' fill='none' stroke='%23c9a227' stroke-width='0.5' opacity='0.1'/%3E%3C/svg%3E");
 }
 
-.hero-badge {
-  background-color: #f7bd00;
-  color: #13117a;
+/* ===== BORDA DECORATIVA EGÍPCIA ===== */
+.egypt-border {
+  border-image: linear-gradient(90deg, #c9a227, #b8860b, #c9a227) 1;
 }
 
-.hero-card,
-.custom-card,
-.curiosity-card,
-.contact-card {
-  border-radius: 1rem;
+/* ===== SCROLLBAR PERSONALIZADA ===== */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-/* Padroniza como as imagens devem preencher seus espacos */
-.hero-image,
-.tourism-image,
-.gallery-image {
-  object-fit: cover;
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
 }
 
-.hero-image {
-  height: 320px;
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #c9a227, #b8860b);
+  border-radius: 5px;
 }
 
-.tourism-image {
-  height: 220px;
+/* ===== MENU MOBILE ===== */
+.mobile-menu {
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
 }
 
-.gallery-image {
-  height: 220px;
+.mobile-menu.active {
+  transform: translateX(0);
+}
+
+/* ===== HIERÓGLIFOS DECORATIVOS ===== */
+.hieroglyph {
+  font-size: 1.5rem;
+  opacity: 0.6;
+}
+
+/* ===== GALLERY IMAGE HOVER ===== */
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* ===== BOTÃO COM EFEITO ===== */
+.btn-egypt {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-egypt::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
   width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s ease;
 }
 
-/* Pequenos cards de numeros da primeira secao */
-.info-box {
-  background-color: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(77, 54, 35, 0.08);
-  border-radius: 1rem;
-  padding: 1rem;
+.btn-egypt:hover::before {
+  left: 100%;
 }
 
-.section-light {
-  background-color: var(--sand);
-}
-
-.section-dark {
-  background: linear-gradient(180deg, #2b1f17 0%, #1f1711 100%);
-}
-
-.gallery-section {
-  background: linear-gradient(180deg, #f5ecdc 0%, #efe0c1 100%);
-}
-
-/* Efeito simples para destacar cards e imagens ao passar o mouse */
-.custom-card,
-.curiosity-card,
-.contact-card,
-.info-box,
-.gallery-image {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.custom-card:hover,
-.curiosity-card:hover,
-.gallery-image:hover,
-.info-box:hover {
-  transform: translateY(-4px);
-}
-
-.contact-card .form-control:focus {
-  border-color: var(--gold);
-  box-shadow: 0 0 0 0.25rem rgba(212, 166, 60, 0.2);
-}
-
-/* Estilo do rodape */
-.footer-section {
-  background-color: #120d09;
-  color: #f3dfbf;
-}
-
-.footer-link {
-  color: var(--gold);
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.footer-link:hover,
-.footer-link:focus {
-  color: #f6d37a;
-}
-
-/* Ajustes especificos para telas pequenas */
-@media (max-width: 767.98px) {
-  .hero-image {
-    height: 260px;
-  }
+/* ===== TIMELINE ===== */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -28px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background: #c9a227;
+  border-radius: 50%;
+  border: 3px solid #1a1a2e;
 }
