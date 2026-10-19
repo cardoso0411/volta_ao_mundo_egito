@@ -43,7 +43,6 @@ Projeto desenvolvido para a disciplina de Desenvolvimento Web III. Este site apr
 ## Como visualizar o site
 
 1. Abra o arquivo `index.html` no navegador.
-2. Alternativa: use um servidor local simples, se desejar.
 
 ## Observações
 
